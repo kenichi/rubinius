@@ -249,7 +249,8 @@ namespace rubinius {
 
     int digit = 0;
     mp_digit shift = base, value = 0;
-    mp_int a = { 0 };
+    // mp_int a = { 0 };
+    mp_int a = {};
 
     for( ; str < end; str++) {
       digit = digit_value[int(*str)];

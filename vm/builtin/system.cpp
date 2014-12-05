@@ -1685,8 +1685,8 @@ retry:
     case cThreadKill:
       reason = state->symbol("thread_kill");
       break;
-    default:
-      reason = state->symbol("unknown");
+    // default:
+    //   reason = state->symbol("unknown");
     }
 
     tuple->put(state, 0, reason);
