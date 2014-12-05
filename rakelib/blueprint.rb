@@ -254,7 +254,7 @@ Daedalus.blueprint do |i|
   gcc.cflags.unshift "#{dirs.map { |d| "-I#{src}#{d}" }.join(" ")} -I. -Ivm/test/cxxtest"
 
   gcc.cflags << "-Wno-unused-function"
-  gcc.cflags << "-Werror"
+  # gcc.cflags << "-Werror"
   gcc.cflags << "-DRBX_PROFILER"
   gcc.cflags << "-D__STDC_LIMIT_MACROS -D__STDC_CONSTANT_MACROS"
   gcc.cflags << "-D_LARGEFILE_SOURCE"
